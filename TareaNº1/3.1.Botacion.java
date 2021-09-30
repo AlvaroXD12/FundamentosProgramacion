@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class 3.1.Botacion {
+public class Botacion {
   static Scanner entrada= new Scanner(System.in);
   public static void main(String[]args){
     //Declaracion de variable e iniciacion
