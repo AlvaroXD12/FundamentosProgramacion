@@ -19,9 +19,6 @@ public class DiadelAmor {
     }else{
     if (inversion>=251){
       System.out.println("Usted puede regalarle un anillo con sus: $" +inversion);
-    }  
-    }
-    }
-    }
+    }}}}
   }
 }

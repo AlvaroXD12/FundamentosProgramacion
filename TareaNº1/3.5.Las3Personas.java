@@ -16,8 +16,6 @@ public class Las3Personas {
     }else{
     if (cod==2506){  
       System.out.println("Su nombre es Francisco y su edad es:" +mayor);
-    }
-    }
-    }
+    }}}
   }
 }
