@@ -2,7 +2,7 @@ class EstCondicional{
 
   public static void main(String[] arg){
     System.out.println("Hola mundo");
-    int numero1=20;
+    int numero1=40;
     int numero2=30;
     if(numero1>numero2){
       System.out.println("Numero mayor es:" + numero1);
