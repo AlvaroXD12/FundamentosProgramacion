@@ -20,5 +20,5 @@ public class Descuento {
      //Datos de salida
       System.out.println ("El descuento es de: " + descuento);
       montototal= precio-descuento;
-System.out.println ("El monto total de la venta es de: " + montototal);
+      System.out.println ("El monto total de la venta es de: " + montototal);
 } }
