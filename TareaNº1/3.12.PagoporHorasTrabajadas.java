@@ -11,10 +11,10 @@ public class PagoporHorasTrabajadas {
     PH=entrada.nextDouble();
     //Proceso
     if(HT>=41 && HT<=45){
-      pago=(PH*HT);
+      pago=(2*PH*HT);
     }else{
     if(HT>=46 && HT<=50){
-      pago=(PH*HT);
+      pago=(3*PH*HT);
     }else{
     if(HT>50){
       System.out.println("No puede trabajar mas de 50 horas a la semana"); 
