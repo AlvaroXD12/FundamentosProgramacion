@@ -2,15 +2,13 @@ import java.util.Scanner;
 public class RecorridoporKilometro {
   static Scanner in = new Scanner(System.in); 
   public static void main(String[]args){
-    //Declaracion de variable e iniciacion
+    //Declaracion de variables e inicializacion
     double costo=0, presupuesto;
     //Datos de entrada
-    System.out.print("Ingresa el valor del costo: ");
+    System.out.println("Ingresa el valor del costo:");
     costo=in.nextDouble();
-    in.nextLine();
-    System.out.print("Ingresa el valor de presupuesto: ");
+    System.out.println("Ingresa el valor de presupuesto:");
     presupuesto=in.nextDouble();
-    in.nextLine();
     //Proceso y Datos de salida
     if(costo*750*2<=presupuesto)
       System.out.println("Mexico");
