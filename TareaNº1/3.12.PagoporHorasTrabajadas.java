@@ -7,7 +7,7 @@ public class PagoporHorasTrabajadas {
     //Datos de entrada
     System.out.println("Ingrese las horas trabajadas en la semana:");
     HT=entrada.nextInt();
-    System.out.println("Ingrese el pago por hora que recive:");
+    System.out.println("Ingrese el pago por hora que recibe:");
     PH=entrada.nextDouble();
     //Proceso
     if(HT>=41 && HT<=45){
