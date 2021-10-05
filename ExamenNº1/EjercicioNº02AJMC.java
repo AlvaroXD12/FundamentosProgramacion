@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Promedio {
+public class Premioporpuntos {
   static Scanner entrada = new Scanner(System.in);
   public static void main(String[] args){
    //Declaracion de variable e inicializacion
