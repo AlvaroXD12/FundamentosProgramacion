@@ -36,7 +36,7 @@ public class Ejercicios {
      if(THambur<1||THambur>3)
      System.out.print("Valor incorrecto. Ingresalo nuevamente.: ");
      }while (THambur<1||THambur>3);
-  System.out.println("Pagara con tarjeta:");
+    System.out.println("Pagara con tarjeta:");
     System.out.println("\t1.-si");
     System.out.println("\t2.-no");
     System.out.print("\t: ");
@@ -131,6 +131,29 @@ public class Ejercicios {
     System.out.println("el ahorro total es:"+ahorro);
   }
 
+  static void ejercicio6(){
+    //Declaracion de variables e inicializacion
+    int año;
+    double ahorro=0; double interes=0; double total=0; double t=0;
+    //Datos de entrada
+    System.out.println("Ingresa los años de ahorro:");
+    año=sc.nextInt();
+    //Proceso
+     while(año>0){
+     for(int x=1; x <= 12; x++) {
+      if(x%1==0){
+      System.out.println("Ingrese el ahorro del mes:" +x);
+      ahorro=sc.nextInt();
+      total=total+ahorro;
+      }}
+      año=año-1; 
+      interes=interes+(total/10); 
+      t=interes+total;
+      System.out.println("El interes es de:"+interes);
+      System.out.println("La inversion total es:"+t);
+      }
+  }
+
   static void MenuOpciones(){ 
   //Declaracionde variables
   int opc=0;
@@ -145,6 +168,7 @@ public class Ejercicios {
     case 3: ejercicio3();break;
     case 4: ejercicio4();break;
     case 5: ejercicio5();break;
+    case 6: ejercicio6();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
