@@ -65,6 +65,27 @@ public class Ejercicios {
   System.out.println("El monto a pagar por las hamburguesas es de:" +pAgo);   
   }
 
+  static void ejercicio3(){
+    //Declaracion de variables e inicializacion
+    int x=1, total, n, mayores=0 ,menores=0;
+    //Datos de entrada
+    System.out.println("Ingrese el total de numeros:");
+    total=sc.nextInt();
+    //Proceso
+    while(x<=total){
+    System.out.println("Ingrese un numero");
+    n=sc.nextInt();
+    if(n<=0)
+    menores=menores+1;
+    else
+    mayores=mayores+1;
+    x=x+1;
+    }
+    //Datos de salida
+    System.out.println("El total de numeros menores o igual a cero es:" +menores);
+    System.out.println("El total de numeros mayores de cero es:" +mayores);
+  }
+
   static void MenuOpciones(){ 
   //Declaracionde variables
   int opc=0;
@@ -76,6 +97,7 @@ public class Ejercicios {
     switch(opc) {
     case 1: ejercicio1();break;
     case 2: ejercicio2();break;
+    case 3: ejercicio3();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
