@@ -14,7 +14,7 @@ public class SumaPares{
   //Proceso
     for(A = A; A <= B ; A++){
       if(A%2 == 0){
-      suma = suma+1;
+      suma = suma+A;
       }
     }
   //Datos de Salida
