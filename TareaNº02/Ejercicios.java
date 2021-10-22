@@ -116,6 +116,21 @@ public class Ejercicios {
     System.out.println("El total de focos rojos es:" +rojo);
   }
 
+  static void ejercicio5(){
+    //Declaracion de variables e inicializacion
+    double ahorro=0;
+    //Proceso
+    for(int a=1; a <= 365; a++) {
+
+      if(a%1==0){
+        ahorro = ahorro + Math.pow(3,a);
+      }
+      System.out.println("El dia :" + a + "Hubo un ahorro de:" +ahorro);
+    }
+    //Datos de salida
+    System.out.println("el ahorro total es:"+ahorro);
+  }
+
   static void MenuOpciones(){ 
   //Declaracionde variables
   int opc=0;
@@ -129,6 +144,7 @@ public class Ejercicios {
     case 2: ejercicio2();break;
     case 3: ejercicio3();break;
     case 4: ejercicio4();break;
+    case 5: ejercicio5();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
