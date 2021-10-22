@@ -86,6 +86,36 @@ public class Ejercicios {
     System.out.println("El total de numeros mayores de cero es:" +mayores);
   }
 
+  static void ejercicio4(){
+    //Declaracion de variables e inicializacion
+    int n, color, rojo=0 ,blanco=0, verde=0;
+    //Datos de entrada
+    System.out.println("Ingrese el lote de focos:");
+    n=sc.nextInt();
+    //Proceso
+    while(n>0){
+    System.out.println("Selecciona un color");
+    System.out.println("\t1.- verde");
+    System.out.println("\t2.- blanco");
+    System.out.println("\t3.- rojo");
+    System.out.print("\t: ");
+    color=sc.nextInt();
+    if(color>=1 && color<=3)
+     if(color==1)
+     verde=verde+1;
+     else
+     if(color==2)
+     blanco=blanco+1;
+     else
+     rojo=rojo+1;
+     n=n-1;   
+    }
+    //Datos de salida
+    System.out.println("El total de focos verdes es:" +verde);
+    System.out.println("El total de focos blancos es:" +blanco);
+    System.out.println("El total de focos rojos es:" +rojo);
+  }
+
   static void MenuOpciones(){ 
   //Declaracionde variables
   int opc=0;
@@ -98,6 +128,7 @@ public class Ejercicios {
     case 1: ejercicio1();break;
     case 2: ejercicio2();break;
     case 3: ejercicio3();break;
+    case 4: ejercicio4();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
