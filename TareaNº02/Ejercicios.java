@@ -20,7 +20,71 @@ public class Ejercicios {
     System.out.println("Su salario es de:"+salario);
   }
 
+  static void ejercicio2(){
+  //Declaracion de variables e inicializacion
+  int nh=0; int THambur=0; int tarjeta=0; double pAgo=0;
+  //Datos de entrada 
+  System.out.println("Cantidad de hamburguesas:");
+  nh=sc.nextInt();
+  System.out.println("Seleccione el tipo de hamburguesa:");
+    System.out.println("\t1.-Hamburguesa sencilla $20");
+    System.out.println("\t2.-Hamburguesa doble $25");
+    System.out.println("\t3.-Hamburguesa triple $28");
+    System.out.print("\t: ");
+    do{
+     THambur=sc.nextInt();
+     if(THambur<1||THambur>3)
+     System.out.print("Valor incorrecto. Ingresalo nuevamente.: ");
+     }while (THambur<1||THambur>3);
+  System.out.println("Pagara con tarjeta:");
+    System.out.println("\t1.-si");
+    System.out.println("\t2.-no");
+    System.out.print("\t: ");
+    do{
+     tarjeta=sc.nextInt();
+     if(tarjeta<1||tarjeta>2)
+     System.out.print("Valor incorrecto. Ingresalo nuevamente.: ");
+     }while (tarjeta<1||tarjeta>2);
+  //Proceso
+  if(THambur==1 && tarjeta==1)
+   pAgo= nh*20 + (nh*20*0.05);
+   else
+  if(THambur==1 && tarjeta==2)
+  pAgo=(nh*20);
+  if(THambur==2 && tarjeta==1)
+   pAgo= nh*25 + (nh*25*0.05);
+   else
+  if(THambur==2 && tarjeta==2)
+  pAgo=(nh*25);
+  if(THambur==3 && tarjeta==1)
+   pAgo= nh*28 + (nh*28*0.05);
+   else
+  if(THambur==3 && tarjeta==2)
+  pAgo=(nh*28);
+  //Datos de salida
+  System.out.println("El monto a pagar por las hamburguesas es de:" +pAgo);   
+  }
+
+  static void MenuOpciones(){ 
+  //Declaracionde variables
+  int opc=0;
+  System.out.println("------------------------------");
+  String msg="\nIngrese el Algoritmo que desea Probar1=xxxx 2=xxxx:";
+  System.out.println(msg);
+  opc=sc.nextInt();  
+  while(opc!=0){
+    switch(opc) {
+    case 1: ejercicio1();break;
+    case 2: ejercicio2();break;
+     default:
+     System.out.println("El Algoritmo no existe!");
+    }   
+    System.out.println("------------------------------");  
+    System.out.println(msg);
+    opc=sc.nextInt();        
+  }}   
+
   public static void main(String[] args) {
-    ejercicio1();
+    MenuOpciones();
   }
 }
