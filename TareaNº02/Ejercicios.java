@@ -154,6 +154,34 @@ public class Ejercicios {
       }
   }
 
+  static void ejercicio7(){
+    //Declaracion de variables e inicializacion
+    int salones, edad=0; double tot=0; double nudeAlumn=0;
+    double suma=0; double alumnos=0;
+    //Datos de entrada
+    System.out.println("Ingresa la cantidad de salones:");
+    salones=sc.nextInt();
+    //Proceso
+     while(salones>0){
+      System.out.println("Ingrese el numero de alumnos:");
+      nudeAlumn=sc.nextInt();
+     for(int x=1; x <= nudeAlumn; x++){
+       if(x%1==0){
+         System.out.println("Ingrese la edad:" +x);
+         edad=sc.nextInt();
+         suma=suma+edad;
+         }
+      }
+      alumnos=alumnos+nudeAlumn;
+      System.out.println("El promedio del salon " +salones+ " es: " +(suma/nudeAlumn)+ " años");
+      salones=salones-1;
+      
+    }
+    //Datos de salida
+     tot=tot+suma;
+     System.out.println("El promedio de toda la escuela es:" +(tot/alumnos)+ "años");
+  }
+
   static void MenuOpciones(){ 
   //Declaracionde variables
   int opc=0;
@@ -169,6 +197,7 @@ public class Ejercicios {
     case 4: ejercicio4();break;
     case 5: ejercicio5();break;
     case 6: ejercicio6();break;
+    case 7: ejercicio7();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
