@@ -172,14 +172,43 @@ public class Ejercicios {
          suma=suma+edad;
          }
       }
-      alumnos=alumnos+nudeAlumn;
       System.out.println("El promedio del salon " +salones+ " es: " +(suma/nudeAlumn)+ " años");
+      alumnos=alumnos+nudeAlumn;
       salones=salones-1;
-      
     }
     //Datos de salida
      tot=tot+suma;
-     System.out.println("El promedio de toda la escuela es:" +(tot/alumnos)+ "años");
+     System.out.println("El promedio de toda la escuela es:" +(tot/alumnos)+ " años");
+  }
+
+  static void ejercicio8(){
+    //Declaracion de variables
+    int billetes_de_200, billetes_de_100, billetes_de_50, billetes_de_10, monedas_de_5, monedas_de_2,monedas_de_1;double monedas_de_50c, monedas_de_20c, monedas_de_10c, total;
+    //Datos de entra y proceso    
+    System.out.print("Ingresa el valor de billetes de 200: ");
+    billetes_de_200 = sc.nextInt();
+    System.out.print("Ingresa el valor de billetes de 100: ");
+    billetes_de_100 = sc.nextInt();
+    System.out.print("Ingresa el valor de billetes de 50: ");
+    billetes_de_50 = sc.nextInt();
+    System.out.print("Ingresa el valor de billetes de 10: ");
+    billetes_de_10 = sc.nextInt();
+    System.out.print("Ingresa el valor de monedas de 5: ");
+    monedas_de_5 = sc.nextInt();
+    System.out.print("Ingresa el valor de monedas de 2: ");
+    monedas_de_2 = sc.nextInt();
+    System.out.print("Ingresa el valor de monedas de 1: ");
+    monedas_de_1 = sc.nextInt();
+    System.out.print("Ingresa el valor de monedas de 50c: ");
+    monedas_de_50c = sc.nextInt();
+    System.out.print("Ingresa el valor de monedas de 20c: ");
+    monedas_de_20c = sc.nextInt();
+    System.out.print("Ingresa el valor de monedas de 10c: ");
+    monedas_de_10c = sc.nextInt(); 
+
+    total=billetes_de_200*200+billetes_de_100*100+billetes_de_50*50+billetes_de_10*10+monedas_de_5*5+monedas_de_2*2+monedas_de_1*1+monedas_de_50c*0.5+monedas_de_20c*0.2+monedas_de_10c*0.1;
+    //Datos de salida
+    System.out.println("Valor de total: " +total);
   }
 
   static void MenuOpciones(){ 
@@ -198,6 +227,7 @@ public class Ejercicios {
     case 5: ejercicio5();break;
     case 6: ejercicio6();break;
     case 7: ejercicio7();break;
+    case 8: ejercicio8();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
