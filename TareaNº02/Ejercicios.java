@@ -214,12 +214,12 @@ public class Ejercicios {
   static void ejercicio9(){
     //Variables e inicializacion
     int aprobados, i, n, reprobados;
-    double calificacion, calificacion_aprobatoria;
+    double calificacion, nota_aprobatoria;
     aprobados = 0;
     reprobados = 0;
     //Datos de entrada
-    System.out.print("Ingresa el valor de calificacion aprobatoria minima: ");
-    calificacion_aprobatoria = sc.nextDouble();
+    System.out.print("Ingresa el valor de la nota aprobatoria minima: ");
+    nota_aprobatoria = sc.nextDouble();
     System.out.print("Ingresa el numero de estudiantes: ");
     n = sc.nextInt();
     //Proceso
@@ -227,7 +227,7 @@ public class Ejercicios {
       System.out.print("Estudiante " + i);
       System.out.print(" Calificacion: ");
       calificacion = sc.nextDouble();
-      if(calificacion>=calificacion_aprobatoria)
+      if(calificacion>=nota_aprobatoria)
           aprobados=aprobados+1;
       else
           reprobados=reprobados+1;
