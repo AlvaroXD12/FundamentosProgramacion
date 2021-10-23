@@ -211,6 +211,32 @@ public class Ejercicios {
     System.out.println("Valor de total: " +total);
   }
 
+  static void ejercicio9(){
+    //Variables e inicializacion
+    int aprobados, i, n, reprobados;
+    double calificacion, calificacion_aprobatoria;
+    aprobados = 0;
+    reprobados = 0;
+    //Datos de entrada
+    System.out.print("Ingresa el valor de calificacion aprobatoria minima: ");
+    calificacion_aprobatoria = sc.nextDouble();
+    System.out.print("Ingresa el numero de estudiantes: ");
+    n = sc.nextInt();
+    //Proceso
+    for (i=1; i<=n; i++) {
+      System.out.print("Estudiante " + i);
+      System.out.print(" Calificacion: ");
+      calificacion = sc.nextDouble();
+      if(calificacion>=calificacion_aprobatoria)
+          aprobados=aprobados+1;
+      else
+          reprobados=reprobados+1;
+    }
+    //Datos de salida
+    System.out.println("Los aprobados son: " + aprobados);
+    System.out.println("Los reprobados son: " + reprobados);
+  }
+
   static void MenuOpciones(){ 
   //Declaracionde variables
   int opc=0;
@@ -228,6 +254,7 @@ public class Ejercicios {
     case 6: ejercicio6();break;
     case 7: ejercicio7();break;
     case 8: ejercicio8();break;
+    case 9: ejercicio9();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
