@@ -214,12 +214,12 @@ public class Ejercicios {
   static void ejercicio9(){
     //Variables e inicializacion
     int aprobados, i, n, reprobados;
-    double calificacion, calificacion_aprobatoria;
+    double calificacion, nota_aprobatoria;
     aprobados = 0;
     reprobados = 0;
     //Datos de entrada
-    System.out.print("Ingresa el valor de calificacion aprobatoria minima: ");
-    calificacion_aprobatoria = sc.nextDouble();
+    System.out.print("Ingresa el valor de la nota aprobatoria minima: ");
+    nota_aprobatoria = sc.nextDouble();
     System.out.print("Ingresa el numero de estudiantes: ");
     n = sc.nextInt();
     //Proceso
@@ -227,7 +227,7 @@ public class Ejercicios {
       System.out.print("Estudiante " + i);
       System.out.print(" Calificacion: ");
       calificacion = sc.nextDouble();
-      if(calificacion>=calificacion_aprobatoria)
+      if(calificacion>=nota_aprobatoria)
           aprobados=aprobados+1;
       else
           reprobados=reprobados+1;
@@ -235,6 +235,42 @@ public class Ejercicios {
     //Datos de salida
     System.out.println("Los aprobados son: " + aprobados);
     System.out.println("Los reprobados son: " + reprobados);
+  }
+
+  static void ejercicio10(){
+    //Declaracion de variables e inciailizacion
+    int i, n;
+    double categoria_1=0, categoria_2=0, categoria_3=0, clave, costo;
+    double impuesto, impuesto_a_pagar=0;
+    //Datos de entrada
+    System.out.print("Ingrese la cantidad de autos que posee: ");
+    n=sc.nextInt();
+    //Proceso
+    for (i=1; i<=n; i++){
+      System.out.print("Auto " + i);
+      System.out.print(" Ingrese el valor de clave del vehiculo: ");
+      clave=sc.nextDouble();
+      System.out.print("Ingresa el valor de costo: ");
+      costo=sc.nextDouble();
+      impuesto=0;
+      if(clave==1)
+        impuesto=costo*0.1;
+        categoria_1=categoria_1+impuesto;
+      if(clave==2)
+          impuesto=costo*0.07;
+          categoria_2=categoria_2+impuesto;
+      if(clave==3)
+          impuesto=costo*0.05;
+          categoria_3=categoria_3+impuesto;
+
+      impuesto_a_pagar=impuesto_a_pagar+impuesto;
+      System.out.println("Valor de impuesto: " + impuesto);
+    }
+    //Datos de salida
+    System.out.println("Valor de categoria 1: " + categoria_1);
+    System.out.println("Valor de categoria 2: " + categoria_2);
+    System.out.println("Valor de categoria 3: " + categoria_3);
+    System.out.println("Valor de impuesto a pagar: " + impuesto_a_pagar);
   }
 
   static void MenuOpciones(){ 
@@ -255,6 +291,7 @@ public class Ejercicios {
     case 7: ejercicio7();break;
     case 8: ejercicio8();break;
     case 9: ejercicio9();break;
+    case 10: ejercicio10();break;
      default:
      System.out.println("El Algoritmo no existe!");
     }   
