@@ -12,7 +12,7 @@ public class App{
     int opcionesA=0;
     System.out.println("-------------------------------");
     String msg="\nIngrese el Algoritmo que desea Probar"+ 
-    "\n1=Sualudo"   
+    "\n1=ImpuestoPorAutomoviles"   
     ;
  
     opcionesA=lt.leer(0, msg);  
