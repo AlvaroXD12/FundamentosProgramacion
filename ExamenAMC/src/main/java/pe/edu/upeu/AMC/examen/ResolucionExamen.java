@@ -57,25 +57,28 @@ public class ResolucionExamen {
     }
 
     public void NumeroPerfecto(){
-      int np=1, v=1, n, suma=0;
+      int np=0, v=1, n, suma=0;
       String numerosp="";
       System.out.println("Introdusca la cantida de los primeros numeros perfectos que desea saber: ");
       n=sc.nextInt();
-      while(0<n){
+      while(np<n){
       v++;
       for(int x=1;x<v;x++){
         if(v%x==0){
           suma=suma+x;
-        }}
+        }
+      }
         if(suma==v){
           np=np+1;
           numerosp=numerosp+suma+",";
           suma=0;
-        }
+        }else{
+            System.out.println(v +"no es Perfecto");
+            suma=0;
         }
       }
       System.out.println("No. Perfecto: "+numerosp);
-      }
-  } 
+    }
+}
 
   
