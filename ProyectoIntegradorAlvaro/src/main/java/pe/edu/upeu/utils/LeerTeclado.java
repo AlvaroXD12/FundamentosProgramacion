@@ -1,4 +1,4 @@
-package pe.edu.upeu.AMC.utils;
+package pe.edu.upeu.utils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 public class LeerTeclado{
 
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 
 public int leer(int val, String msg){
   System.out.print(msg+":");
@@ -52,4 +53,18 @@ public String leer(String val, String msg){
   System.out.println();
   return val;
 }
+
+public char leer(char val, String msg){
+  System.out.print(msg+":");
+  try{//Dario
+    val=br.readLine().charAt(0);
+  }catch(Exception e){
+    val=leer(val,msg);
+  }
+  System.out.println();
+  return val;
+}
+
+
+
 }

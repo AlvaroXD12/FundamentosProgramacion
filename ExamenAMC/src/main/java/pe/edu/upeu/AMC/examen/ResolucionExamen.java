@@ -79,6 +79,13 @@ public class ResolucionExamen {
       }
       System.out.println("No. Perfecto: "+numerosp);
     }
+    public long factorial(int numero){
+      double x;
+      if(numero>1){
+        return factorial(Math.pow(x,numero));
+      }
+      return 1;
+    }
 }
 
   
