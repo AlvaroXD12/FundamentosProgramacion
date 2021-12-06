@@ -6,7 +6,7 @@ import java.util.List;
 
 import pe.edu.upeu.utils.LeerArchivo;
 
-public class appCrud {
+public class AppCrud {
  
     public String generarId(LeerArchivo la, int numColum, String prefijo, int iniPrefNex){
         int idX=1;
