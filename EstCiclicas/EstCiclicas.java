@@ -1,3 +1,5 @@
+package EstCiclicas;
+
 import java.util.Scanner;
 
 class EstCiclicas{
